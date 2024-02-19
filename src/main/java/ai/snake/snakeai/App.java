@@ -1,15 +1,16 @@
 package ai.snake.snakeai;
 
-import ai.snake.snakeai.game.SnakeApplication;
+import ai.snake.snakeai.app.SnakeApplication;
 import javafx.application.Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@EnableSwagger2
 @Configuration
 @SpringBootApplication
-public class Snake{
+public class App {
+    public static final int HORIZONTAL_FIELDS = 19;
+    public static final int VERTICAL_FIELDS = 29;
+    public static final int FIELD_SIZE = 25;
     public static void main(String[] args) {
         Application.launch(SnakeApplication.class, args);
     }
